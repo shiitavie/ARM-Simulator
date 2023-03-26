@@ -1,14 +1,13 @@
-CMSC-22200 Lab 1. 
+Step 1. 
 
-For this lab, you will be writing a functional simulator of a subset of ARM.
-Please see the lab handout for details.
+For this step, I wrote a functional simulator of a subset of ARM.
 
 
 /*** Files ***/
 
 1. "src/" subdirectory 
-- The shell: "shell.h", "shell.c" (DO NOT MODIFY)
-- The simulator skeleton: "sim.c" (MODIFY)
+- The shell: "shell.h", "shell.c" 
+- The simulator skeleton: "sim.c"
 
 2. "inputs/" subdirectory 
 - Test inputs for the simulator (ARM assembly code): "*.s"
@@ -20,7 +19,7 @@ Please see the lab handout for details.
 
 4. "ref"
 - LEGv8_Reference_Data.pdf is a simplified ARM Instruction Set reference data.
-- However, for LSL and LSR, LEGv8 is different from ARMv8. See Lab1.pdf for details.
+- However, for LSL and LSR, LEGv8 is different from ARMv8. See README for details.
 - DDI0487B_a_armv8_arm.pdf is the detail ARMv8 Instruction Set reference manual.
 
 5. "aarch64-linux-android-4.9"
@@ -28,8 +27,7 @@ Please see the lab handout for details.
 
 /*** Instructions ***/
 
-1. Modify "sim.c" to implement the ARM instruction set specified in the lab
-handout. Run "make" to compile the simulator.
+Run "make" to compile the simulator.
 
 $ cd src/
 $ make
@@ -59,5 +57,4 @@ $ src/sim inputs/addis.x
 >> 
 >> Simulating...
 
-Right now, the simulator will become unresponsive because it has not been
-implemented yet (that is your job!). Press Control+C to exit the simulator.
+Press Control+C to exit the simulator.
